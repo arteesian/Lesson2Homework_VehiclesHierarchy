@@ -1,3 +1,3 @@
 public interface HasWings {
-    abstract void describeWings();
+    void describeWings();
 }

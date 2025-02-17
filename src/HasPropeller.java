@@ -1,3 +1,3 @@
 public interface HasPropeller {
-    abstract void describePropeller();
+    void describePropeller();
 }

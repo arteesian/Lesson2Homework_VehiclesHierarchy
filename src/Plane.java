@@ -3,8 +3,10 @@ public class Plane extends Vehicle implements HasWheels, HasPropeller, HasWings,
 private String planeType;
 private int cargoWeight;
 
-    public Plane(String model, int weight, double maxSpeed) {
+    public Plane(String model, int weight, double maxSpeed, String planeType, int cargoWeight) {
         super(model, weight, maxSpeed);
+        this.planeType = planeType;
+        this.cargoWeight = cargoWeight;
     }
 
     public String getPlaneType() {

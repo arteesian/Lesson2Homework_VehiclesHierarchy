@@ -1,3 +1,3 @@
 public interface DoesShipping {
-    abstract int increaseCargoWeight(int a);
+    int increaseCargoWeight(int a);
 }

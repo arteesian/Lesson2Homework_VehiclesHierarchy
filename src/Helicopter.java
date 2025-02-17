@@ -1,8 +1,9 @@
 public class Helicopter extends Vehicle implements HasWheels, HasPropeller, DoesShipping{
     private int cargoWeight;
 
-    public Helicopter(String model, int weight, double maxSpeed){
+    public Helicopter(String model, int weight, double maxSpeed, int cargoWeight){
         super(model, weight, maxSpeed);
+        this.cargoWeight = cargoWeight;
     }
 
     public int getCargoWeight() {

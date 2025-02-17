@@ -12,6 +12,7 @@ public class Taxi extends Vehicle implements HasWheels{
 
     @Override
     public String toString() {
-        return "Это такси. " + super.toString();
+        return "Это такси. " + super.toString()
+                + ". Максимальное число пассажиров: " + MAX_PASSENGERS;
     }
 }

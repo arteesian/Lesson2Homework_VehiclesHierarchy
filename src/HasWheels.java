@@ -1,3 +1,3 @@
 public interface HasWheels {
-    abstract void describeWheels();
+    void describeWheels();
 }

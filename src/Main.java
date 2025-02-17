@@ -1,8 +1,6 @@
 public class Main {
     public static void main(String[] args) {
-        Plane plane = new Plane("Boeing", 13000, 614.75);
-        plane.setCargoWeight(30);
-        plane.setPlaneType("грузовой");
+        Plane plane = new Plane("Boeing", 13000, 614.75, "грузовой", 30);
         System.out.println(plane);
         plane.describeWheels();
         plane.describePropeller();
@@ -11,9 +9,8 @@ public class Main {
         System.out.println("Увеличенный груз: " + plane.increaseCargoWeight(10 ));
         System.out.println();
 
-        Helicopter heli = new Helicopter("Apache", 2000, 214.00);
-        heli.setCargoWeight(20);
-         System.out.println(heli);
+        Helicopter heli = new Helicopter("Apache", 2000, 214.00, 20);
+        System.out.println(heli);
         heli.describePropeller();
         System.out.println("Увеличим груз на x, докинем еще 5, получим: " + heli.increaseCargoWeight(10 ));
         System.out.println();
@@ -25,6 +22,5 @@ public class Main {
         Taxi taxi = new Taxi("Volkswagen Polo", 1500, 225.67);
         System.out.println(taxi);
         taxi.describeWheels();
-        System.out.println("Максимальное число пассажиров - " + Taxi.MAX_PASSENGERS);
     }
 }
